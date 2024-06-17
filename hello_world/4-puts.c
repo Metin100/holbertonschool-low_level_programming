@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  *
- * Description: Printing "Programming is like building a multilingual puzzle";
+ * Description: Printing "\"Programming is like building a multilingual puzzle";
  * @parameter: void
  *
  * Return: Always 0 (Success)
