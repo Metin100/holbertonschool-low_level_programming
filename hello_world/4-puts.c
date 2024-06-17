@@ -1,10 +1,8 @@
 #include <stdio.h>
-/*
- * Function: main
- * ----------------------------
- * Entry point of the program. Prints a message using the puts function.
+/**
+ * main - Entry point
  *
- * Returns: 0 on successful execution.
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
