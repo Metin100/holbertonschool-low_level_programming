@@ -1,7 +1,9 @@
 #include <stdio.h>
-
+/*description fo function main */
 int main(void)
 {
-puts("\"Programming is like building a multilingual puzzle");
+const char *message = "Programming is like building a multilingual puzzle";
+puts(message);
 return (0);
 }
+
