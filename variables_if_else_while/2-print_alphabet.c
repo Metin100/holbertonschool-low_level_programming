@@ -1,11 +1,17 @@
 #include <stdio.h>
-
-int main(void){
+/**
+ * main - Prints the alphabetic
+ *
+ * Return: Always (Success)
+ */
+int main(void)
+{
 	char n = 'a';
 
-	while(n <= 'z'){
-		putchar(n);
-		n = n +1;
+	while (n <= 'z')
+	{
+		putchar (n);
+		n = n + 1;
 	}
 	return (0);
 }
