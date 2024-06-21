@@ -7,7 +7,7 @@ void times_table(void)
 	{
 		for(c = 0; c <= 9; c++)
 		{
-			_putchar(a*c + '0');
+			_putchar(a*c);
 		}
 		_putchar('\n');
 	}
