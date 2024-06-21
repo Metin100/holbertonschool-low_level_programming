@@ -2,43 +2,23 @@
 
 void times_table(void)
 {
-	int a, c;
-	for (a = 0; a <= 9 ; a++)
+	int mult, dmp, count;
+	for (count = 0; count <= 9; count++)
 	{
-		for(c = 0; c <= 9; c++)
+		_putchar('0');
+		for (mult = 1;mult <= 9; mult++)
 		{
-			int k = a * c;
-			if (k < 10)
-			{
-				if (c != 9)
-				{
-				_putchar(k + '0');
-				_putchar(',');
+			_putchar(',');
+			_putchar(' ');
+			
+			dmp = mult * count;
+
+			if (dmp <= 9)
 				_putchar(' ');
-				_putchar(' ');
-				}
-				else
-				{
-				_putchar(k + '0');
-				}
-			}
-			else if (k >= 10)
-			{
-				if (c != 9)
-                                {
-					_putchar(k / 10 + '0');
-					_putchar(k % 10 + '0');
-					_putchar(',');
-					_putchar(' ');
-					                                _putchar(' ');
-                                }
-                                else
-                                {
-					_putchar(k / 10 + '0');
-					_putchar(k % 10 + '0');
-				}
-				
-			}
+			else 
+				_putchar((dmp / 10) + '0');
+
+			_putchar((dmp % 10) + '0');
 		}
 		_putchar('\n');
 	}
