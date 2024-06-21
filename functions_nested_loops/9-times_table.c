@@ -8,10 +8,17 @@ void times_table(void)
 		for(c = 0; c <= 9; c++)
 		{
 			int k = a * c;
-			_putchar(k / 10 + '0');
-			_putchar(k % 10 + '0');
-			_putchar(',');
-			_putchar(' ');
+			if (k < 10)
+			{
+				_putchar(k + '0');
+			}
+			else if (k >= 10)
+			{
+				_putchar(k / 10 + '0');
+				_putchar(k % 10 + '0');
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
 		_putchar('\n');
 	}
