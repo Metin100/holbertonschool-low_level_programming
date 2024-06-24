@@ -9,7 +9,7 @@ void print_diagonal(int n)
 		_putchar(' ');
 		if (k == (n - 1))
 		{
-			_putchar('\');
+			_putchar('\\');
 		}
 	}
 }
