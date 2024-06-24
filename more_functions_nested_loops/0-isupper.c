@@ -3,7 +3,6 @@
 
 int _isupper (int c)
 {
-	char k = "c + '0'";
 
 	if (c >= 'A' && c <= 'Z')
 	{
