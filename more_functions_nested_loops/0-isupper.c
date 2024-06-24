@@ -3,13 +3,13 @@
 
 int _isupper (int c)
 {
-	char k = 'c + '0'';
+	char k = "c + '0'";
 
-	if (c >= "A" && c <= "Z")
+	if (c >= 'A' && c <= 'Z')
 	{
 		return 1;
 	}
-	else if (c >= "a" && c <= "z")
+	else if (c >= 'a' && c <= 'z')
 	{
 		return 0;
 	}
