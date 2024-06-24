@@ -5,24 +5,22 @@
 * @n:parameter
 * Return:returns nothing
 */
-
 void print_diagonal(int n)
 {
-	int k,j;
+	int x, y;
 
-	if(n > 0)
+	if (n > 0)
 	{
-		for (k = 1; k <= n ; k++)
+		for (x = 0; x < n; x++)
 		{
-			for (j = 1; j < k; j++)
-			
-				_putchar(' '); 
-			
+			for (y = 0; y < x; y++)
+
+				_putchar(' ');
+
 			_putchar('\\');
 
-			if (k == (n - 1))
+			if (x == (n - 1))
 				continue;
-
 			_putchar('\n');
 		}
 	}
