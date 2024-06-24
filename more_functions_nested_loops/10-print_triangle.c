@@ -11,7 +11,7 @@ void print_triangle(int size)
 			{
 				_putchar(' ');
 			}
-			for (; sutun <= size ; sutun++)
+			for (; sutun < size ; sutun++)
 			{
 				_putchar('#');
 			}
