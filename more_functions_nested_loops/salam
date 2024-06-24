@@ -1,0 +1,7 @@
+#include "main.h"
+
+int main(void)
+{
+	_isupper('A');
+	return (0);
+}
