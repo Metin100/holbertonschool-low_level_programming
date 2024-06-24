@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+* print_diagonal - prints a diagonal
+* @n:parameter
+* Return:returns nothing
+*/
+
 void print_diagonal(int n)
 {
 	int k,j;
@@ -14,7 +20,7 @@ void print_diagonal(int n)
 			
 			_putchar('\\');
 
-			if (x == (n - 1))
+			if (k == (n - 1))
 				continue;
 			_putchar('\n');
 		}
