@@ -3,7 +3,7 @@
 
 void rev_string(char *s)
 {       
-        int *begin , *end = s;
+        char *begin , *end = s;
         
         int i,len;
 
