@@ -12,7 +12,7 @@ void rev_string(char *s)
                 end++;
         }
 
-        *begin = s;
+        begin = s;
         len = i+1;
 
         for (i = 0; i < len/2; i++)
