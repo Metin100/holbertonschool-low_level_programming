@@ -14,7 +14,7 @@ void puts2(char *str)
 	length = a + 1;
 	begin = str;
 
-	for (a = 0; a < length / 2; a++)
+	for (a = 0; a <= length; a++)
 	{
 		_putchar(*begin);
 		*begin += 2;
