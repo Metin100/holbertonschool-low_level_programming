@@ -18,5 +18,9 @@ void puts2(char *str)
 	{
 		_putchar(*begin);
 		*begin += 2;
+		if (begin >= end)
+		{	
+			break;
+		}
 	}
 }
