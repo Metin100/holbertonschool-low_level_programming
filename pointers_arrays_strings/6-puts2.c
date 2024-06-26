@@ -22,5 +22,7 @@ void puts2(char *str)
                         break;
                 }
 		 else
-		*begin += 2;
+		 {
+			 *begin += 2;
+		 }
 }
