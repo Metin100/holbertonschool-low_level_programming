@@ -23,4 +23,5 @@ void puts2(char *str)
                         break;
                 }
 			 begin += 2;
+	}
 }
