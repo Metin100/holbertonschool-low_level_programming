@@ -22,8 +22,5 @@ void puts2(char *str)
                 {
                         break;
                 }
-		 else
-		 {
 			 begin += 2;
-		 }
 }
