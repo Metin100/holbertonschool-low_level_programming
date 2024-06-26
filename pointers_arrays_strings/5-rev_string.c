@@ -2,25 +2,26 @@
 #include <stdio.h>
 
 void rev_string(char *s)
-{       
-        char *begin , *end = s;
-        
-        int i,len;
+{
+	char *begin , *end = s;
 
-        for (i = 0; s[i] != '\0' && s[i + 1] != '\0'; i++)
-        {
-                end++;
-        }
+	int i , length;
 
-        begin = s;
-        len = i+1;
+	for (i = 0; s[i] != "\0" && s[i + 1] != "\0"; i++)
+	{
+		end++;
+	}
 
-        for (i = 0; i < len/2; i++)
-        {
-                char tmp = *end;
-                *begin = *end;
-                *end = tmp;
-                begin++;
-                end--;
-        }
+	begin = s;
+	length = i + 1;
+
+	for (i = 0; i < length / 2 ; i++)
+	{
+		char tmp;
+		tmp = *begin;
+		*begin = *end;
+		*end = tmp;
+		begin++;
+		end--;
+	}
 }
