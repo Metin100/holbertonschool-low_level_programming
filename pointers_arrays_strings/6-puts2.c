@@ -1,28 +1,15 @@
 #include "main.h"
-#include <stdio.h>
 
 void puts2(char *str)
 {
-	char *begin, *end = str;
+	int i;
 
-	int a, length;
-
-	for (a = 0; str[a] != '\0' && str[a + 1] != '\0'; a++)
-        {
-                end++;
-        }
-	length = a + 1;
-	begin = str;
-
-	for (a = 0; a <= length; a++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		_putchar(*begin);
-
-		 if (begin >= end)
-                {
-                        break;
-                }
-			 begin += 2;
+		if (i % 2 == 0)
+		{
+			_putchar(str[i]);
+		}
 	}
 	_putchar('\n');
 }
