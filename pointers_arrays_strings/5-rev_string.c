@@ -3,9 +3,9 @@
 
 void rev_string(char *s)
 {
-	char *begin , *end = s;
+	char *begin, *end = s;
 
-	int i , length;
+	int i, length;
 
 	for (i = 0; s[i] != '\0' && s[i + 1] != '\0'; i++)
 	{
@@ -18,6 +18,7 @@ void rev_string(char *s)
 	for (i = 0; i < length / 2 ; i++)
 	{
 		char tmp;
+
 		tmp = *begin;
 		*begin = *end;
 		*end = tmp;
