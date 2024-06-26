@@ -17,10 +17,10 @@ void puts2(char *str)
 	for (a = 0; a <= length; a++)
 	{
 		_putchar(*begin);
+		 if (begin >= end)
+                {
+                        break;
+                }
+		 else
 		*begin += 2;
-		if (begin >= end)
-		{	
-			break;
-		}
-	}
 }
