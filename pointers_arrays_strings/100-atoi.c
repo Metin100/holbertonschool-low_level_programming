@@ -5,6 +5,10 @@
 *@s: Pointer to a character string.
 *Return: void.
 */
+
+// First we have to define symbol of number - or +
+//then we have to define numbers itself
+//at the end of story we should multiple sign and num for return true value;
 int _atoi(char *s)
 {
 	int sign;
