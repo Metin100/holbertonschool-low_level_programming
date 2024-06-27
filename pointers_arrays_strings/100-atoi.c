@@ -20,11 +20,11 @@ int _atoi(char *s)
 	}
 	if (*tmp != '\0')
 	{
-		while (*tmp >= 0 && *tmp <= 9)
-			{
+		do
+		{
 				num = num * 10 + (*tmp - '0');
 				tmp++;
-			}
+		}while (*tmp >= 0 && *tmp <= 9)
 	}
-	return (sign * num);
+	return (num * sign);
 }
