@@ -1,6 +1,11 @@
 #include "math.h"
 #include <stdio.h>
-
+/**
+*print_array - function that prints n elements of an array of integers,
+*followed by a new line
+*@a: this is my input string
+*@n: this input string length
+*/
 void print_array(int *a, int n)
 {
 	int i;
