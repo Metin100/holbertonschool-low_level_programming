@@ -24,7 +24,7 @@ int _atoi(char *s)
 		{
 				num = num * 10 + (*tmp - '0');
 				tmp++;
-		}while (*tmp >= 0 && *tmp <= 9);
+		}while (*tmp >= '0' && *tmp <= '9');
 	}
 	return (num * sign);
 }
