@@ -17,7 +17,7 @@ char *cap_string(char *res)
 			{
 				for (j = 0; j <= 12; j++)
 				{
-					if (c[j] == res[i - 1]);
+					if (c[j] == res[i - 1])
 					{
 						res[i] -= 'a' - 'A';
 						break;
