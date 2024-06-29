@@ -6,7 +6,8 @@
 *
 *Return: address to the string
 */
-
+//First we have to define "is that symbol NULL or not"
+//then we are defining is that symbol lower or not
 char *string_toupper(char *str)
 {
 	int i = 0;

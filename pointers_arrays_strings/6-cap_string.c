@@ -6,6 +6,20 @@
 *
 *Return: address of s
 */
+
+//first we are defining array which contains seperating symbols
+//first loop checks is this symbol NULL or not
+//then we have condition which is asking that is it lowercase or not
+// if it is, then we are checking is it first symbol and then we make it upper
+// else we have loop which is searching seperate symbols and if we found them:
+// we will make symbol uppercas
+// //first we are defining array which contains seperating symbols
+// first loop checks is this symbol NULL or not
+// then we have condition which is asking that is it lowercase or not
+/// if it is, then we are checking is it first symbol and then we make it upper
+//else we have loop which is searching seperate symbols and if we found them:
+//we will make symbol uppercase
+
 char *cap_string(char *s)
 {
 	int i = 0, j;
