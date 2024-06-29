@@ -9,6 +9,10 @@
 *Return: Copied string with the number of bytes
 */
 
+//we use first loop for copying n symbol from src to dest 
+//But we need \0 for ending our string
+//so second loop works on this purpose
+
 
 char *_strncpy(char *dest, char *src, int n)
 {
