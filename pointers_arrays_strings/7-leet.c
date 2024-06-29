@@ -8,7 +8,7 @@ char *leet(char *tmp)
 
 	while (tmp[i])
 	{
-		for (j = 0; j < sizeof(c); j++){
+		for (j = 0; j < 5; j++){
 		
 			if (j == 0 && (tmp[i] == c[j] || tmp[i] == (c[j] -= 'a' - 'A')))
 			{
@@ -31,7 +31,7 @@ char *leet(char *tmp)
                                 tmp[i] = '1';
                         }
 		}
-		i++:
+		i++;
 	}
 
 	return (tmp);
