@@ -8,6 +8,12 @@
 *Return: returns new concatenated string
 */
 
+//We use first loop for define index of last symbol in dest which is our first side of text
+//Second loop has 2 purposes
+//1-taking symbol from src array
+//2-admire symbol to end of the dest array
+//We are admiring n symbol of src to end of the dest
+
 char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0;
