@@ -6,6 +6,8 @@
 *@n: number of elements
 */
 
+//If we have to reverse our array , we should use loop until half of array.
+
 void reverse_array(int *a, int n)
 {
 	int start = 0, end = n;
