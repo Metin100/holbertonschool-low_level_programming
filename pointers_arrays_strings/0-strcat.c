@@ -9,6 +9,10 @@
 *Return: returns poiner to @dest
 */
 
+//We use first loop for define index of last symbol in dest which is our first side of text
+//Second loop has 2 purposes
+//1-taking symbol from src array
+//2-admire symbol to end of the dest array
 
 char *_strcat(char *dest, char *src)
 {
