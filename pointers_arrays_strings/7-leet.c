@@ -1,38 +1,28 @@
 #include "main.h"
 
-char *leet(char *tmp)
+/**
+*leet - encodes a string into 1337
+*@s: string to encode
+*
+*Return: address of s
+*/
+
+char *leet(char *s)
 {
-	int i = 0, j;
+	int i, j;
+	char a[] = "aAeEoOtTlL";
+	char b[] = "4433007711";
 
-	char c[] = {"aeotl"};
-
-	while (tmp[i])
+	for (i = 0; s[i]; i++)
 	{
-		for (j = 0; j < 5; j++){
-		
-			if (j == 0 && (tmp[i] == c[j] || tmp[i] == (c[j] -= 'a' - 'A')))
+		for (j = 0; j < 10; j++)
+		{
+			if (a[j] == s[i])
 			{
-				tmp[i] = '4';
+				s[i] = b[j];
+				break;
 			}
-			else if (j == 1 && (tmp[i] == c[j] || tmp[i] == (c[j] -= 'a' - 'A')))
-                        {
-                                tmp[i] = '3';
-                        }
-			else if (j == 2 && (tmp[i] == c[j] || tmp[i] == (c[j] -= 'a' - 'A')))
-                        {
-                                tmp[i] = '0';
-                        }
-			else if (j == 3 && (tmp[i] == c[j] || tmp[i] == (c[j] -= 'a' - 'A')))
-                        {
-                                tmp[i] = '7';
-                        }
-			else if (j == 4 && (tmp[i] == c[j] || tmp[i] == (c[j] -= 'a' - 'A')))
-                        {
-                                tmp[i] = '1';
-                        }
 		}
-		i++;
 	}
-
-	return (tmp);
+	return (s);
 }
