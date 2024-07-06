@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 void print_diagsums(int *a, int size)
 {
 	int i = 0, j = 0, sum = 0;
