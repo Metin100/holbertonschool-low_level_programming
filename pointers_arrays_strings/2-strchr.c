@@ -1,24 +1,16 @@
 char *_strchr(char *s, char c)
 {
-	int i = 0;
-	
-	for (; s[i]; i++)
+	while (*s != '\0')
 	{
-		if (s[i] != c)
+		if (*s == c)
 		{
-			continue;
+			return (s);
 		}
-		else 
-		{
-			int j = 0;
-			for (; s[i]; i++)
-			{
-				s[j] = s[i];
-			}
-			break;
-		}
+		s++;
 	}
-
-	return (s);
-
+	if (*s == '\0')
+	{
+		return (s);
+	}
+	return (NULL);
 }
