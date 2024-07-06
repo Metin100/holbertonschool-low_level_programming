@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-char *_strpbrk(char *s, char *accept){
-	
+char *_strpbrk(char *s, char *accept)
+{	
 	while (*s != '\0')
 	{
 		int j = 0;
@@ -9,7 +9,7 @@ char *_strpbrk(char *s, char *accept){
 		{
 			if (*s == accept[j])
 				return (s);
-			j++;	
+			j++;
 		}
 		s++;
 	}
