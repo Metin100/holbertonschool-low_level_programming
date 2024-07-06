@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 char *_strpbrk(char *s, char *accept){
 	
 	while (*s != '\0')
@@ -12,5 +14,5 @@ char *_strpbrk(char *s, char *accept){
 		s++;
 	}
 
-		return (s);
+		return (NULL);
 }
