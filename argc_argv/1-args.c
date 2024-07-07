@@ -1,10 +1,15 @@
 #include <stdio.h>
 
-int main(int __attribute__((unused)) argc, char *argv[])
+/**
+*main - prints program name
+*@argc: number of arguments
+*@argv: array of arguments
+*
+*Return: 0
+*/
+int main(int argc, char __attribute__((unused)) *argv[])
 {
-	int i;
-	for (i = 0; argv[i]; i++)
-		;
+	printf("%d\n", argc - 1);
 
-	printf("%d\n",i);
+	return (0);
 }
