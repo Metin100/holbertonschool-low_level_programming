@@ -1,7 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc , char *argv[])
+/**
+*main - prints multiplication
+*of two numbers
+*@argc: number of arguments
+*@argv: array of arguments
+*
+*Return: returns 0
+*/
+
+int main(int argc, char *argv[])
 {
 	int sum = 1, i;
 
@@ -15,7 +24,7 @@ int main(int argc , char *argv[])
 		{
 			sum = sum * atoi(argv[i]);
 		}
-		printf("%d\n",sum);
+		printf("%d\n", sum);
 	}
 
 
