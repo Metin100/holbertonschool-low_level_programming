@@ -12,7 +12,7 @@ int main(int argc , char *argv[])
 	{
 		for (i = 1; argv[i]; i++)
 		{
-			sum = sum * atoi(argv[i]);
+			sum = sum * argv[i];
 		}
 	}
 
