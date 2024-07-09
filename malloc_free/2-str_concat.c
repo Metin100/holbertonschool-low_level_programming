@@ -3,11 +3,12 @@
 
 char *str_concat(char *s1, char *s2)
 {
+	char *k;
+        int start = 0, end1, end2, end;
+
 	if (s1 == NULL || s2 == NULL)
 		return (NULL);
 
-	char *k;
-	int start = 0, end1, end2, end;
 
 	while (s1[start])
 		start++;
