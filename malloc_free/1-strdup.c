@@ -10,7 +10,7 @@ char *_strdup(char *str)
 		return (NULL);
 
 
-	for (; str[i]; i++)
+	for (i = 0; str[i]; i++)
 			;
 
 	k = malloc(sizeof(char) * (len + 1));
