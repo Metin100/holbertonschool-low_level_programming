@@ -20,7 +20,7 @@ char *_strdup(char *str)
 
 	for (i = 0; k[i]; i++)
 	{
-		*k[i] = str[i];
+		k[i] = str[i];
 	}
 
 	return (k);
