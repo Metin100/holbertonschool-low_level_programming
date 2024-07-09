@@ -1,48 +1,44 @@
+#include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
+
+/**
+*str_concat - get ends of input and add together for size
+*@s1:input one to concat
+*@s2:input two to concat
+*Return:concat of s1 and s2
+*/
+
 
 char *str_concat(char *s1, char *s2)
 {
-	char *k;
-        int start = 0, end1, end2, end;
+	int i = 0, j = 0;
+	char *concat;
 
-	if (s1 == NULL || s2 == NULL)
+	if (!s1)
+		s1 = "";
+
+	if (!s2)
+		s2 = "";
+
+
+	while (s1[i] != '\0')
+		i++;
+
+	while (s2[j] != '\0')
+		j++;
+
+	concat = malloc((i + j + 1) * sizeof(char));
+	if (!concat)
 		return (NULL);
 
+	for (i = 0; s1[i] != '\0'; i++)
+		concat[i] = s1[i];
 
-	while (s1[start])
-		start++;
+	for (j = 0; s2[j] != '\0'; j++)
+		concat[i + j] = s2[j];
 
-	end1 = start;
-	start = 0;
 
-	while (s2[start])
-		start++;
+	concat[i + j] = '\0';
 
-	end2 = start;
-
-	end = end1 + end2;
-
-	k = malloc(sizeof(char) * end);
-
-	if (k == NULL)
-		return (NULL);
-
-	start = 0;
-
-	while (start <= end1)
-	{
-		k[start] = s1[start];
-		start++;
-	}
-	end2 = start;
-	start = 0;
-
-	while (end2 <= end)
-	{
-		k[end2] = s2[start];
-		start++;
-		end2++;
-	}
-	return (k);
+	return (concat);
 }
