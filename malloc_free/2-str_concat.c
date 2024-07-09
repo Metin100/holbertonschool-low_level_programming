@@ -30,16 +30,19 @@ char *str_concat(char *s1, char *s2)
 
 	start = 0;
 
-	while (start <= end)
+	while (start <= end1)
 	{
-		if (start <= end1)
-		{
-			k[start] = s1[start];
-		}
-		else if (start >= end1)
-		{
-			k[start] = s2[start];
-		}
+		k[start] = s1[start];
+		start++;
+	}
+	end2 = start;
+	start = 0;
+
+	while (end2 <= end)
+	{
+		k[end2] = s2[start];
+		start++;
+		end2++;
 	}
 	return (k);
 }
