@@ -4,7 +4,7 @@
 char *_strdup(char *str)
 {
 	char *k;
-	int i = 0;
+	int i, len = 0;
 
 	if (str == NULL)
 		return (NULL);
@@ -13,12 +13,12 @@ char *_strdup(char *str)
 	for (; str[i]; i++)
 			;
 
-	k = malloc(sizeof(char) * i);
+	k = malloc(sizeof(char) * (len + 1));
 
 	if (k == NULL)
 		return (NULL);
 
-	for (i = 0; k[i]; i++)
+	for (i = 0; i <= len; i++)
 	{
 		k[i] = str[i];
 	}
