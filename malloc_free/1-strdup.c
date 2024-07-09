@@ -3,12 +3,12 @@
 
 char *_strdup(char *str)
 {
-	char *array;
+	char *k;
 
 	if (str == NULL)
 		return (NULL);
 
-	int i;
+	unsigned int i;
 
 	for (i = 0; str[i]; i++)
 			;
