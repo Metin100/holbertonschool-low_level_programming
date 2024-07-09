@@ -20,5 +20,4 @@ char *create_array(unsigned int size, char c)
 		k[i] = c;
 	}
 		return (k);
-	
 }
