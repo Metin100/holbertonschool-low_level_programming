@@ -4,13 +4,13 @@
 char *_strdup(char *str)
 {
 	char *k;
+	int i = 0;
 
 	if (str == NULL)
 		return (NULL);
 
-	unsigned int i;
 
-	for (i = 0; str[i]; i++)
+	for (; str[i]; i++)
 			;
 
 	k = malloc(sizeof(char) * i);
