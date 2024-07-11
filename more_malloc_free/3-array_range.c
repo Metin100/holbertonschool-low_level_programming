@@ -4,10 +4,10 @@
 
 int *array_range(int min, int max)
 {
+	int i = 0, *memory;
+	
 	if (min > max)
 		return (NULL);
-
-	int i = 0, *memory;
 
 	while (min <= max)
 	{
