@@ -4,7 +4,7 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *memory;
+	char *memory;
 	unsigned i;
 
 	if (nmemb == 0 || size == 0)
@@ -17,7 +17,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	for (i = 0; i < nmemb; i++)
 	{
-		memory[i] = 0;
+		memory[i] = '0';
 	}
 
 	memory[i] = '\0';
