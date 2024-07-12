@@ -9,12 +9,12 @@
 *
 */
 
-void *malloc_checked (unsigned int b)
+void *malloc_checked(unsigned int b)
 {
 	int *c = malloc(b);
 
 	if (!c)
-		exit (98);
+		exit(98);
 
 	return (c);
 }
