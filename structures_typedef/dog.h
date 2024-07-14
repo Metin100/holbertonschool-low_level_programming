@@ -1,8 +1,13 @@
 #include <stdio.h>
 
-struct dog
+int main(void)
 {
-	char *name;
-	float age;
-	char *owner;
+	struct dog
+	{
+		char *name;
+		float age;
+		char *owner;
+	}
+
+	return (0);
 }
