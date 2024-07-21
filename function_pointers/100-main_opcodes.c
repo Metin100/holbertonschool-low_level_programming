@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 	if (a < 0)
 	{
 		printf("Error\n");
-		exit(1);
+		exit(2);
 	}
 
 	while (i < a)
