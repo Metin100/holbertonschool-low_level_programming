@@ -31,7 +31,7 @@ int main(int argc, char* argv[])
 	{
 		printf("%02hhx", *((char *)main + i));
 
-		if (i < n - 1)
+		if (i < a - 1)
 			printf(" ");
 		else
 			printf("\n");
