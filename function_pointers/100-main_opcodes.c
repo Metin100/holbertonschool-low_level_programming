@@ -35,6 +35,8 @@ int main(int argc, char *argv[])
 			printf(" ");
 		else
 			printf("\n");
+
+		i++;
 	}
 
 	return (0);
