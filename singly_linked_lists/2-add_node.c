@@ -3,6 +3,13 @@
 #include <string.h>
 #include "lists.h"
 
+/**
+ * add_node - function that adds a new node at the beginning of a list_t list.
+ * @head: header node of singly linked list
+ * @str: string
+ * Return: A number of nodes
+ */
+
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new;
@@ -15,22 +22,22 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	while(str[i]!= '\0')
+	while (str[i] != '\0')
 	{
 		i++;
 	}
-	new -> str = strdup(str);
+	new->str = strdup(str);
 
 	if (new->str == NULL)
 	{
 		free(new);
 		return (NULL);
 	}
-	
-	new -> len = i;
-	new -> next = *head;
-	
+
+	new->len = i;
+	new->next = *head;
+
 	*head = new;
 
-	return *head;
+	return (*head);
 }
