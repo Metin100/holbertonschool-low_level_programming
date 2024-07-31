@@ -1,6 +1,14 @@
 #include <stdlib.h>
 #include "lists.h"
 
+/**
+ * insert_dnodeint_at_index - function inserts a new node at a given position.
+ * @h: node.
+ * @idx: index which is we should add our new_node
+ * @n: value.
+ * Return: the address of the new node.
+ */
+
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *new_node;
@@ -14,30 +22,23 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		free(new_node);
 		return (NULL);
 	}
-	new_node->n = n;
 	prev_node = *h;
-	if (!prev_node)
-	{
-		prev_node = new_node;
-		prev_node->next = NULL;
-		prev_node->prev = NULL;
-		return (prev_node);	
-	}
-	while (i != (idx - 1) && prev_node != NULL)
+
+	while (i != (idx - 1))
 	{
 		prev_node = prev_node->next;
 		i++;
 	}
-	if (!prev_node)
-	{	
-		return (NULL);
-	}
 	next_node = prev_node->next;
-
-	new_node->prev = prev_node;
-	prev_node->next = new_node;
-	next_node->prev = new_node;
-	new_node->next = next_node;
+	if (prev_node == NULL)
+	{
+		return (add_dnodeint(&next_node, n));
+	}
+	if (next_node == NULL)
+	{
+		return (add_dnodeint_end(&prev_node, n));
+	}
+	new_node->n = n, new_node->prev = prev_node, prev_node->next = new_node, next_node->prev = new_node, new_node->next = next_node;
 
 	return (new_node);
 }
