@@ -2,7 +2,7 @@
 #include <stddef.h>
 
 /**
- * sum_dlistint - a function that returns the sum of all the data (n) of a list.
+ * sum_dlistint - a function returns the sum of all the data (n) of a list.
  * @head: node.
  * Return: sum of the values in node.
  */
